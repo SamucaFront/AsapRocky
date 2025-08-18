@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root{
+    --cor1: #001021;
+    --cor2: #034748;
+    --cor3: #2ca58d;
+    --cor4: #EFF8E2;
+    --cor5: #FFFDF7;
+
+    --fonte-padrao: arial, verdana, Helvetica, sans-serif;
+    --fonte-h1: 'Anton-Regular.ttf', cursive
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: var(--cor1);
+    color: var(--cor5);
+    text-align: center;
+    padding: 10px;
+}
+
+nav a{
+    color: var(--cor5);
+    text-decoration: none;
+    font-family: var(--fonte-h1);
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+nav a:hover{
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
+h1, h2{ 
+padding-left: 40px;
+font-family: var(--fonte-h1);
+color: var(--cor1);
+margin-bottom: 20px; /* espaço abaixo do título */
+}
+
+p{
+ text-indent: 30px; /* recuo na primeira linha */
+    font-size:20px ;
+       margin-top: 10px;    /* espaço acima do parágrafo */
+    margin-bottom: 20px; /* espaço abaixo do parágrafo */
+}
+
+.fotos {
+    flex-wrap: wrap;           /* permite que as imagens quebrem para a próxima linha */
+    justify-content: center;   /* centraliza as linhas de imagens */
+    display: flex;            /* deixa as imagens lado a lado */
+     gap: 10px;                /* espaço entre as imagens */
+}
+
+.fotos img {
+width: 22%;                /* largura relativa ao container */
+max-width: 220px;          /* não ultrapassa 220px */
+height: auto;
+object-fit: cover;
+}
+
+.fotos img:hover {
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.24);
+  transform: scale(1.05);    /* aumenta imagem ao passar o mouse */
+  transition: transform 0.6; /* animação suave */
+}
+
+
+ul {
+    list-style-type: disc;   /* bolinhas padrão na frente de cada item */
+    padding-left: 30px;      /* recuo das bolinhas */
+    margin-bottom: 25px;     /* espaço abaixo da lista */
+}
+
+ul li {
+    font-size: 19px;        /* aumenta a letra */
+    color: #001021;
+    line-height: 1.5;      /* deixa a leitura mais agradável */
+}
+
+
+body{
+background-color: var(--cor4);
+}
+
+header {
+    background: linear-gradient(to bottom var(--cor4), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+header h1{
+    color: var(--cor2);
+}
+
+main {
+    background-color: var(--cor5);
+    width: 80%;          /* ocupa 80% da largura da tela */
+    max-width: 1200px;   /* limita a largura máxima */
+    margin: 0 auto;      /* centraliza horizontalmente */
+    padding: 20px;       /* espaço interno */
+}
+
+
+div.video {
+    background-color: var(--cor1); /* cor de fundo */
+    position: relative;             /* necessário para o iframe absoluto */
+    width: 100%;                    /* ocupa toda a largura */
+    padding-top: 56.25%;            /* proporção 16:9 para o vídeo */
+    margin-bottom: 30px;
+    overflow: hidden;               /* evita que o vídeo "vaze" do container */
+}
+
+div.video iframe {
+    position: absolute;         /* posicionamento absoluto */
+    top: 0;
+    left:0 ;
+    width: 100%;
+    height: 100%;
+}
+
+
+.social-links {
+    display: flex;              /* deixa os links em linha */
+    justify-content: center;    /* centraliza horizontalmente */
+    gap: 20px;                  /* espaço entre os ícones */
+    margin: 20px 0;             /* espaço acima e abaixo do container */
+}
+
+.social-icon{
+text-align: center;
+}
+
+.instagram {
+color: var(--cor3);
+font-size: 40px;
+margin-right: 10px;
+}
+
+.instagram:hover {
+    color: var(--cor1);
+    transition: color 0.3s ease; /* animação suave ao passar o mouse */
+}
+
+.twitter{
+color: var(--cor3);
+font-size: 40px;
+margin-right: 10px;
+}
+
+.twitter:hover{
+    color:var(--cor1);
+    transition: color 0.3s ease; /* animação suave ao passar o mouse */
+}
+
+.youtube{
+color:var(--cor3);
+font-size: 40px;
+margin-right: 10px;
+}
+
+.youtube:hover{
+    color:var(--cor1);
+    transition: color 0.3s ease; /* animação suave ao passar o mouse */
+}
+
+.facebook{
+color: var(--cor3);
+font-size: 40px;
+margin-right: 10px;
+}
+
+.facebook:hover{
+    color:var(--cor1);
+    transition: color 0.3s ease; /* animação suave ao passar o mouse */
+}
+
+.Rocky-link {
+    color: var(--cor1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Rocky-link:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+footer{
+background-color: var(--cor2);
+color: var(--cor5);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: var(--cor5);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
